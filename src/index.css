@@ -1,0 +1,25 @@
+body {
+  margin: 0;
+  padding: 0;
+  font-family: sans-serif;
+}
+
+.app {
+  display: flex;
+  flex-direction: row;
+  margin: 0 auto;
+}
+
+.app-main {
+  flex: 1 1 auto;
+  padding: 30px;
+}
+
+.app-secondary {
+  width: 300px;
+  padding: 30px;
+}
+
+th {
+  border-bottom: 1px solid silver;
+}
