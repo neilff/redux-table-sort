@@ -1,4 +1,4 @@
-# table-sort
+# redux-table-sort
 
 ## Development
 
