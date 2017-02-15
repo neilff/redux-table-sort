@@ -23,3 +23,14 @@ body {
 th {
   border-bottom: 1px solid silver;
 }
+
+.loading-dialog__inner {
+  border: 1px solid red;
+  color: red;
+  display: inline-block;
+  font-size: 1.5rem;
+  font-style: italic;
+  font-weight: bold;
+  padding: 15px;
+  margin-bottom: 30px;
+}

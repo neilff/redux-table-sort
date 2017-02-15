@@ -46,19 +46,16 @@ const Table = (props) => {
   });
 
   return (
-    <div>
-      <h2>Table Data</h2>
-      <table>
-        <thead>
-          <tr>
-            { headers }
-          </tr>
-        </thead>
-        <tbody>
-          { content }
-        </tbody>
-      </table>
-    </div>
+    <table>
+      <thead>
+        <tr>
+          { headers }
+        </tr>
+      </thead>
+      <tbody>
+        { content }
+      </tbody>
+    </table>
   );
 }
 

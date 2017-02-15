@@ -1,5 +1,7 @@
 import React from 'react';
 
+// Shows a list of columns available on the object
+// clicking one will show / hide that column
 const ColumnToggle = (props) => {
   const columnList = props.availableColumns.map((i, idx) => (
     <li key={ idx }>
@@ -14,10 +16,7 @@ const ColumnToggle = (props) => {
   ))
 
   return (
-    <div>
-      <h2>Column Toggle</h2>
-      <ul>{columnList}</ul>
-    </div>
+    <ul>{columnList}</ul>
   );
 };
 

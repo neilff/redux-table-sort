@@ -6,7 +6,13 @@ import TableContainer from './TableContainer';
 import ColumnToggleContainer from './ColumnToggleContainer';
 import AppState from '../components/AppState';
 
+import * as dataActions from '../actions/data';
+
 class App extends PureComponent {
+  componentDidMount() {
+    this.props.onLoad();
+  }
+
   render() {
     const { props } = this;
 
@@ -31,7 +37,9 @@ const mapStateToProps = (state) => {
   };
 };
 
-const mapDispatchToProps = (dispatch, props) => ({});
+const mapDispatchToProps = (dispatch, props) => ({
+  onLoad: () => dispatch(dataActions.requestData()),
+});
 
 export default connect(
   mapStateToProps,
